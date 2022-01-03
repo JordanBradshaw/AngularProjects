@@ -1,0 +1,25 @@
+<ul ngbNav #nav="ngbNav" [(activeId)]="activeId" class="nav-tabs sticky-top navbar-dark bg-dark" [destroyOnHide]="false">
+  <li ngbNavItem='1' [destroyOnHide]="true">
+    <a ngbNavLink>CardBoys</a>
+    <ng-template ngbNavContent></ng-template>
+  </li>
+  <li ngbNavItem='2'>
+    <a ngbNavLink>Cards</a>
+    <ng-template ngbNavContent>
+      <app-cards-component></app-cards-component>
+    </ng-template>
+  </li>
+  <li ngbNavItem='3'>
+    <a ngbNavLink class='nav-item'>Second</a>
+    <ng-template ngbNavContent>
+      <p>Second content</p>
+    </ng-template>
+  </li>
+  <li ngbNavItem='4'>
+    <a ngbNavLink class='nav-item'>Login</a>
+    <ng-template ngbNavContent>
+      <p>Login</p>
+    </ng-template>
+  </li>
+</ul>
+<div [ngbNavOutlet]="nav"></div>

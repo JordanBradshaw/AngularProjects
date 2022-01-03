@@ -1,0 +1,14 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class='container filter-container'>
+      <app-typeahead-component *ngIf='cards' [cards] = cards></app-typeahead-component>
+    </div>
+  </div>
+  <div class="grid-container">
+    <ng-container class='card-container' *ngIf='filteredCards'>
+      <app-card-component *ngFor='let card of filteredCards' [card] = card>
+      </app-card-component>
+    </ng-container>
+  </div>
+
+</div>

@@ -1,0 +1,29 @@
+GET http://localhost:3000/cards
+
+###
+
+GET http://localhost:3000/cards/61b7f6fb7048e3eaa8696360
+
+###
+
+POST http://localhost:3000/cards
+Content-Type: application/json
+
+{
+"name": "Squirtle",
+"genre": "Pokemon",
+"count": 3
+}
+
+###
+
+DELETE http://localhost:3000/cards/61b7f6fb7048e3eaa8696360
+
+###
+
+PATCH http://localhost:3000/cards/61b7f6fb7048e3eaa8696360
+Content-Type: application/json
+
+{
+"name": "updated"
+}

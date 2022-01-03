@@ -1,0 +1,25 @@
+html {
+  background: #f5f7f8;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 20px 0;
+}
+div{
+    text-align: center;
+    display: block;
+    padding: 5px 25px 5px 25px;
+}
+
+.grid-container {
+  display: grid;
+  align-items:center;
+  grid-auto-flow: row;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+
+.filter-container {
+  background-color: lightblue;
+  border: 1px solid black;
+}
