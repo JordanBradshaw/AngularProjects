@@ -47,3 +47,5 @@ Thumbs.db
 
 tsconfig*
 .vscode*
+
+src/app/app.component-*
